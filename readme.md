@@ -6,7 +6,7 @@ This project documents the TrekStor Pyrus / Weltbild 4Ink eBook-Reader, preservi
 
 ## What is this device and why this repo?
 
-The TrekStor Pyrus (also known as the Weltbild 4Ink) is an e-ink reader released in 2012 based on the Rockchip 2818 platform. The company TrekStor does not exist anymore as of 2018 (Source: [ComputerBild](https://www.computerbild.de/artikel/cb-News-PC-Hardware-Trekstor-GmbH-Co.-KG-stellt-Insolvenzantrag-4551398.html)) but their devices were sold in multiple countries in the Europe (Germany, Italy, UK). 
+The TrekStor Pyrus (also known as the Weltbild 4Ink) is an e-ink reader released in 2012 based on the Rockchip 2818 platform. The company TrekStor does not exist anymore as of 2018 (Source: [ComputerBild](https://www.computerbild.de/artikel/cb-News-PC-Hardware-Trekstor-GmbH-Co.-KG-stellt-Insolvenzantrag-4551398.html)) but their devices were sold in multiple countries in Europe (Germany, Italy, UK). 
 They were a popular cheap alternative to the Amazon Kindle and don't just hold up nicely today but are also supported by Open Source software like [Calibre](https://github.com/kovidgoyal/calibre).
 
 Below are the technical specifications discovered from analyzing the hardware.
@@ -23,7 +23,7 @@ Below are the technical specifications discovered from analyzing the hardware.
 
 Note: There is also a EBR40-b variant with 4GB of internal storage. I do not know if the firmware below is also applicable for that variant but if anyone is able to dump their EBR40-b and contribute it that would be nice.
 
-## Firmware (EBR40-a)
+## Firmware (tested with EBR40-a)
 
 The device firmware was originally distributed via an `update.exe` tool that downloaded images from the manufacturer's OTA server.
 
@@ -35,16 +35,18 @@ The device firmware was originally distributed via an `update.exe` tool that dow
 The latest firmware (1.0.54) used to be available at:
 `http://ota.readerportal.de/ebookreader/EBR40-WB-1.0.54.img.zip`
 
-Unfortunately, the update servers are now offline, and the files were not archived, making the original update method impossible.
+Unfortunately, the update servers are now offline, and the files were not archived, making the original update method impossible but we can use our own firmware dumps to recover / update these devices.
+
+Looking into the .img file there is a FAT file system with various manuals for the TrekStor Liro Ink, eBook Reader 4.0, eBook Reader Pyrus and one called BK6008.
 
 ### How to Flash
 
-I have dumped valid firmware images from two EBR40-a's in the firmware folder so you can flash it to your device using the `rkdeveloptool` available from here: https://github.com/rockchip-linux/rkdeveloptool.
+I have dumped and compressed valid firmware images from two EBR40-a's in the firmware folder so you can extract and flash it to your device using the `rkdeveloptool` available from here: https://github.com/rockchip-linux/rkdeveloptool.
 
 Run the following command:
 
 ```bash
-rkdeveloptool wl 0 EBR40-WB.1.0.54-FullDump.bin
+rkdeveloptool wl 0 EBR40-WB.1.0.54-FullDump.img
 ```
 
 Then hold the power button for roughly 10 seconds, release the power button and hold if for roughly 4-5 seconds and it should boot into the new firmware and greet you with the language picker.
