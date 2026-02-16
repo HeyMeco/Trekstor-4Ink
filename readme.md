@@ -29,12 +29,13 @@ The device firmware was originally distributed via an `update.exe` tool that dow
 
 | Version | Notes |
 |---------|-------|
-| 2.0.53 | Latest firmware released (still missing) |
 | **1.0.54** | The newest available firmware version in this repo. |
 | **1.0.47** | Older firmware version. |
 
-The latest firmware (2.0.53) used to be available at:
-`http://ota.readerportal.de/ebookreader/EBR40-WB-2.0.53.img.zip`
+Most likely 1.0.54 is the last version as this [2022 archive.org capture](https://web.archive.org/web/20220625014149/http://www.trekstor.de/service-support-en/service-support-details/product/ebook-reader-4ink.html) mentions `EBR40-WB-1.0.5x` with the release date 2013-02-14.
+
+The latest firmware (1.0.54) used to be available at:
+`http://ota.readerportal.de/ebookreader/EBR40-WB-1.0.54.img.zip`
 
 Unfortunately, the update servers are now offline, and the files were not archived, making the original update method impossible but we can use our own firmware dumps to recover / update these devices.
 
