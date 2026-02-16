@@ -29,11 +29,12 @@ The device firmware was originally distributed via an `update.exe` tool that dow
 
 | Version | Notes |
 |---------|-------|
-| **1.0.54** | The newest known firmware version. |
+| 2.0.53 | Latest firmware released (still missing) |
+| **1.0.54** | The newest available firmware version in this repo. |
 | **1.0.47** | Older firmware version. |
 
-The latest firmware (1.0.54) used to be available at:
-`http://ota.readerportal.de/ebookreader/EBR40-WB-1.0.54.img.zip`
+The latest firmware (2.0.53) used to be available at:
+`http://ota.readerportal.de/ebookreader/EBR40-WB-2.0.53.img.zip`
 
 Unfortunately, the update servers are now offline, and the files were not archived, making the original update method impossible but we can use our own firmware dumps to recover / update these devices.
 
