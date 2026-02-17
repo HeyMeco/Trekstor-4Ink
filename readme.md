@@ -32,6 +32,16 @@ The device firmware was originally distributed via an `update.exe` tool that dow
 | **1.0.54** | The newest available firmware version in this repo. |
 | **1.0.47** | Older firmware version. |
 
+### Changelog
+
+| Version | Release Date | Changes |
+|---------|-------------|---------|
+| **2.0.53** | Unknown | Listed as the latest version in the OTA API for the "eBook Reader 4 Ink - ND" (likely the EBR40-b with 4GB storage). |
+| **1.0.54** | 2013-02-14 | Fixed a page-turning issue. |
+| **1.0.51** | ~2013-02 | Added compatibility with Adobe Digital Editions 2.0 (ADE 2.0). |
+| **1.0.49** | 2012-10-23 | Fixed system crashes during reading, media library update issues and display errors after transferring certain DRM-protected books. |
+| **1.0.47** | ~2012 | Unknown. |
+
 Most likely 1.0.54 is the last version as this [2022 archive.org capture](https://web.archive.org/web/20220625014149/http://www.trekstor.de/service-support-en/service-support-details/product/ebook-reader-4ink.html) mentions `EBR40-WB-1.0.5x` with the release date 2013-02-14.
 
 The latest firmware (1.0.54) used to be available at:
